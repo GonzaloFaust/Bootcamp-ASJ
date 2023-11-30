@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Rellena tu CV</h2>
+
+    <form action="./php/insertra_cv.php" method="POST">
+        <label for="name">Nombre</label>
+        <br>
+        <input type="text" id="name" maxlength="30" size="30" placeholder="Tu nombre">
+        <br>
+        <label for="last-name">Apellido</label>
+        <br>
+        <input type="text" id="last-name" maxlength="80" size="80" placeholder="Tu apellido">
+        <br>
+        <label for="pass">Contraseña</label>
+        <br>
+        <input type="password" id="pass" maxlength="10" size="10" placeholder="Tu Contraseña">
+        <br>
+        <label for="dni">Nombre</label>
+        <br>
+        <input type="number" id="dni" min="0" max="99999999" maxlength="8" placeholder="Tu DNI">
+        <br>
+        <br>
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" name="sexo" id="sexo-hombre" value="hombre" required><label for="sexo-hombre">Hombre</label>
+        <br>
+        <input type="radio" name="sexo" id="sexo-mujer" value="mujer"><label for="sexo-mujer">Mujer</label>
+        <br>
+        <br>
+        <label for="pick-photo">Incluir foto </label><input type="file" id="pick-photo">
+        <br>
+        <br>
+        <input type="checkbox" name="suscribir" id="check-suscribir"><label for="check-suscribir">Quiero suscribirme al boletín de novedades.</label>
+        <br>
+        <br>
+        <button type="submit">Guardar cambios</button>
+    </form>
+</body>
+</html>
