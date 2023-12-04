@@ -54,18 +54,23 @@ function mozo(){
                 switch(opcionMenu){
                     case 1:
                         cuenta+=5;
+                        pagado = false;
                         break;
                     case 2:
                         cuenta+=5;
+                        pagado = false;
                         break;
                     case 3:
                         cuenta+=3;
+                        pagado = false;
                         break;7
                     case 4:
                         cuenta+=10;
+                        pagado = false;
                         break;
                     case 5:
                         cuenta+=12.5;
+                        pagado = false;
                         break;
                     default:
                         alert("opcion incorrecta")
