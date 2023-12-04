@@ -42,3 +42,46 @@ function contPositivos(){
 
 }
 
+function piramide(){
+    let escalones = +prompt("numero escalones: ")
+    //--------------------------
+    // for( let i=1;i<= escalones*2-1; i++){
+    //     let linea =''
+    //     for(let j=1;j<= escalones - ( i % escalones );j++){
+
+    //         linea+="*";
+    //     }
+    //     console.log(linea)
+    // }
+
+    let piramide=""
+    for(let i = 0; i < escalones; i++){
+        for (let j = -1; j < i; j++){
+            piramide+="*"
+        }
+        piramide+="\n"
+    }
+    
+    for(let i = escalones; i > 0; i--){
+        for(let j = i-1; j>0; j--){
+            piramide += "*"
+        }
+        piramide+="\n"
+    }
+    console.log(piramide)
+}
+
+function factorial(){
+    let numero = +prompt ("numero: ")
+    let res=1;
+    if (numero==0){
+        res=1;
+    }
+    else{
+
+        for(let i=1;i<=numero; i++){
+            res*=i;
+        }
+    }
+    console.log(res)
+}
