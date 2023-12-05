@@ -113,7 +113,7 @@ function mozo(){
 function fibo(num){
     const arr=[0,1]
     for(let i=0; i<num;i++){
-        arr.push(+arr.slice(-1) + +arr.slice(-2,-1))
+        arr.push(arr.slice(-1)[0] + arr.slice(-2,-1)[0])
     }
     return arr;
 }
