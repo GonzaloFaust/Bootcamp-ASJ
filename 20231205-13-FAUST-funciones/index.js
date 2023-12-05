@@ -1,3 +1,5 @@
+// modularizar mozo
+
 function verMenu(cuenta,pagado){
     let opcionMenu= +prompt(
         "1.Medialunas🥐\n2.Cafecito☕\n3.Leche\n4.Jugo de Naranja🍊\n5.Birrita🍺\n")
@@ -101,3 +103,19 @@ function mozo(){
     while(opcion !=0)
     alert("Que tenga un buen dia!")
 }
+
+// Fibonacci
+
+// Según un número ingresado por el usuario, mostrar la secuencia de Fibonacci hasta esa cantidad de veces.
+// Ej: el usuario ingresa el 8, mostrar:
+// 0 1 1 2 3 5 8 13 21 34
+
+function fibo(num){
+    const arr=[0,1]
+    for(let i=0; i<num;i++){
+        arr.push(+arr.slice(-1) + +arr.slice(-2,-1))
+    }
+    return arr;
+}
+
+
