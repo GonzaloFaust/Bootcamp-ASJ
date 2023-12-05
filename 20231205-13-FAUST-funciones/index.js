@@ -117,5 +117,3 @@ function fibo(num){
     }
     return arr;
 }
-
-
