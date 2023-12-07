@@ -15,7 +15,8 @@ function addToCart(product){
 }
 
 function removeFromCart(id){
-  return cart.filter(p=>p.id!==id)
+    const cart= getCart();
+    localStorage.setItem('cart',JSON.stringify(cart.filter(p=>p.id!==id)))
 }
 
 function getCart(){

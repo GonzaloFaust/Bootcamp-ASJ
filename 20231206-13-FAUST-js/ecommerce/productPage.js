@@ -8,7 +8,7 @@ const productID= urlParams.get('id')
 const product = products.filter(p=>p.id==productID)[0]
 // console.log(product)
 if (product===undefined){
-    window.location.href='/ecommerce/notfound.html'
+    window.location.href='./notfound.html'
 }
 else{
 
@@ -28,5 +28,5 @@ else{
 
 const addToCartButton = document.getElementById("add-to-cart")
 addToCartButton.addEventListener("click",()=>{
-    addToCart(product)
+    addToCart({id:product.id, cantidad: 1})
 })

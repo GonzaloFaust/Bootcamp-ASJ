@@ -5,7 +5,7 @@ import { cartItemCard, cartItemList } from './assets/utils/cards.js'
 const cartContainer = document.getElementById("cart-products")
 const cartListItems = document.getElementById('cart-list-items')
 const precioFinal = document.getElementById('precio-final')
-
+const confirmarCompra = document.getElementById("confirmar-compra")
 
 const cart= getCart().map(c=>{
     const filtered=products.filter(p=>p.id==c.id)[0];
@@ -31,3 +31,13 @@ for(const c of cartItem ){
 }
 
 precioFinal.textContent = cart.reduce((ac,e)=> ac += e.price * e.cantidad ,0).toFixed(2)
+
+confirmarCompra.addEventListener("click",(e)=>{
+    if(cart.length==0){
+        alert("Agrega productos a tu carrito para realizar una compra")
+    }
+    else{
+        window.location.href='./notfound.html'//se arregla despues
+        
+    }
+})

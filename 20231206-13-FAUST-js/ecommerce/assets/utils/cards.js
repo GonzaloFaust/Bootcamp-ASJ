@@ -1,4 +1,4 @@
-import { addToCart } from './cart.js'
+import { addToCart, removeFromCart } from './cart.js'
 
 function createCard(item) {
 
@@ -166,6 +166,10 @@ function cartItemCard(item) {
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('round');
     deleteButton.textContent = '╳';
+    deleteButton.addEventListener("click",()=>{
+        removeFromCart(item.id);
+        location.reload()
+    })
 
     eliminarElement.appendChild(deleteButton);
     imageContainerElementCart.appendChild(imgElementCart);

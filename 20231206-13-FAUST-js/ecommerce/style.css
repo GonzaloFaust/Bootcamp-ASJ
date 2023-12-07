@@ -99,6 +99,7 @@ nav select:active{
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    margin-bottom: 3em;
 }
 .producto{
     padding: 10px;
