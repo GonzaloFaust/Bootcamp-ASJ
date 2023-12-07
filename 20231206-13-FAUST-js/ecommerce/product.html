@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="e-commerce para Academ-IT">
+    <link rel="stylesheet" href="style.css">
+    <title>MyShop</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./assets/images/logo.png" alt="logotipo del e-commerce">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li>
+                <select name="demos" id="demos">
+                    <option value="op1"><a href="#">DEMOS</a></option>
+                    <option value="op2"><a href="#">DEMOS</a></option>
+                    <option value="op3"><a href="#">DEMOS</a></option>
+                </select>
+            </li>
+            <li>
+                <select name="blocks" id="blocks">
+                    <option value="op1">BLOCKS</option>
+                    <option value="op2">option2</option>
+                    <option value="op3">option3</option>
+                </select>
+            </li>
+            <li><a href="#">COMPONENTS</a></li>
+            <li><a href="#">CONTACT US</li>
+            <li><a href="./cart.html">MY CART</a></li>
+        </ul></nav>
+    </header>
+    <main>
+        <section class="buscador">
+            <div class="breadcrumbs">
+                <span>PRODUCTS</span><span>→</span><span>Un Producto</span>
+            </div>
+            <div>
+                <input type="search">
+                <button type="submit">Buscar</button>
+            </div>
+                <select name="pricelist" id="pricelist">
+                    <option value="op1">option1</option>
+                    <option value="op2">option2</option>
+                    <option value="op3">option3</option>
+                </select>
+        </section>
+        <section class="product-page">
+            <img src="" alt="foto del producto" id="product-image">
+            <div class="product-info">
+
+                <h2 class="title" id="product-title">Un Producto</h2>
+                <div class="price">
+                    <span>$</span>
+                    <span id="product-price">00.00</span>
+                </div>
+                <div class="colors">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <div>
+
+                    <div class="quantity">
+                        <button class="round">-</button>
+                        <input type="text" value="1" size="1">
+                        <button class="round">+</button>
+                    </div>
+                    <button class="call-to-action" id="add-to-cart">ADD TO CART</button>
+                </div>
+                <p class="description" id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloribus nemo et eligendi mollitia totam neque temporibus, adipisci similique ut? Perferendis tempora, veniam repellendus ratione pariatur reprehenderit dicta optio inventore.</p>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="productPage.js"></script>
+</body>
+</html>
