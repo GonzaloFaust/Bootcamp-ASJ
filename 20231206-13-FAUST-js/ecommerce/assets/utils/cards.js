@@ -138,6 +138,14 @@ function cartItemCard(item) {
     decreaseButtonCart.classList.add('round');
     decreaseButtonCart.textContent = '-';
 
+    increaseButtonCart.addEventListener("click",()=>{
+        addToCart({id:item.id, cantidad:1});
+        location.reload()
+    })
+    decreaseButtonCart.addEventListener("click",()=>{
+        addToCart({id:item.id, cantidad:-1});
+        location.reload()
+    })
     quantityElementCart.appendChild(increaseButtonCart);
     quantityElementCart.appendChild(quantityInputCart);
     quantityElementCart.appendChild(decreaseButtonCart);

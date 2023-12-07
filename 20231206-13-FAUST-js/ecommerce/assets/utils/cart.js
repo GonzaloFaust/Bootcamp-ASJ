@@ -11,7 +11,7 @@ function addToCart(product){
     else{
         cart.push(product)
     }
-    localStorage.setItem('cart', JSON.stringify(cart))
+    localStorage.setItem('cart', JSON.stringify(cart.filter(c => c.cantidad > 0)))
 }
 
 function removeFromCart(id){
