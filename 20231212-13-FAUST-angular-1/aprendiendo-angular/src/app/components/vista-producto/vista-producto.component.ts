@@ -11,9 +11,9 @@ import producto from '../../../assets/data/productos'
 })
 export class VistaProductoComponent {
 
-const productos = getProductos()
+ productos = getProductos()
 
-const productosContainer = document.getElementById("productos-container")
+ productosContainer = document.getElementById("productos-container")
 
 
 }

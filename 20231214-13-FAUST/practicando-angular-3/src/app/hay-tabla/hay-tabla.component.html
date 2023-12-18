@@ -1,0 +1,16 @@
+<table class="table table-striped ml-3">
+    <thead>
+        <th scope="col">Nombre</th>
+        <th scope="col">Profesion</th>
+        <th scope="col">Foto</th>
+    </thead>
+    <tbody id="table-body" >
+        
+            <tr *ngFor="let elem of elementosTabla">
+                <td>{{elem.nombre}}</td>
+                <td>{{unaFuncion(elem.rol)}}</td>
+                <td><img style="height:30px;" src={{elem.foto}} alt=""></td>
+            </tr>
+        
+    </tbody>
+</table>

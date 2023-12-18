@@ -1,0 +1,19 @@
+.separator{
+    
+    /* transform: rotate(90deg); */
+    background-color:#eee;
+    height: 80%;
+    width: 1px;
+}
+.container{
+    /* position: relative; */
+    height: 100%;
+}
+.separator-container{
+    position: absolute;
+    height: 100%;
+    width: 1em;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
