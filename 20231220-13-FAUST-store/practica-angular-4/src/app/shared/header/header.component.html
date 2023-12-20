@@ -1,0 +1,12 @@
+<header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a routerLink="" class="nav-link" [ngClass]="checkRoute('/')?'active':'white'">Home</a></li>
+      <li class="nav-item"><a routerLink="products" class="nav-link" [ngClass]="checkRoute('/products')?'active':'white'">Productos</a></li>
+      <li class="nav-item"><a routerLink="categories/smartphones" class="nav-link" [ngClass]="checkRoute('/categories/smartphones')?'active':'white'">Smartphones</a></li>
+      <li class="nav-item"><a routerLink="categories/laptops" class="nav-link" [ngClass]="checkRoute('/categories/laptops')?'active':'white'">Laptops</a></li>
+      <li class="nav-item"><a routerLink="categories/sunglasses" class="nav-link" [ngClass]="checkRoute('/categories/sunglasses')?'active':'white'">Sunglasses</a></li>
+      <li class="nav-item"><a routerLink="cart" class="nav-link" [ngClass]="checkRoute('/cart')?'active':'white'">Carrito <span style="display:inline-block;padding:0 5px;height:20px;width:20px; background-color: green; border-radius:50%;  color:white;">{{cartLength}}</span></a></li>
+      <!-- <li class="nav-item"><a routerLink="categories" class="nav-link" [ngClass]="checkRoute('/categories')?'active':'white'" >Categorias</a></li>
+      <li class="nav-item"><a routerLink="about" class="nav-link" [ngClass]="checkRoute('/about')?'active':'white'">About</a></li> -->
+    </ul>
+  </header>

@@ -1,0 +1,35 @@
+<main>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- --------------------- -->
+                <div class="col" *ngFor="let p of products">
+                    <div class="card shadow-sm">
+                        <div style="max-height:200px; overflow: hidden;">
+                            <img style="object-fit:cover;"src={{p.images[0]}} alt="">
+
+                        </div>
+                        <div class="card-body">
+                            <h5>{{p.title}}</h5>
+                            <p class="card-text">{{p.description}}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                    <a [routerLink]="['/products/'+p.id]" class="btn btn-sm btn-outline-secondary">View</a>
+                                    
+                               
+                                <small class="text-body-secondary">${{p.price}}</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------- -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src={{producto.images}} alt="">
+            
+        </div>
+        <div class="col">
+            <h2>{{producto.title}}</h2>
+            <span>{{producto.category}}</span>
+            <p>{{producto.description}}</p>
+            <p><strong>$</strong>{{producto.price}}</p>
+            <input #quantity type="number" name="quantity" id="quantity">
+            <button (click)="addToCart(quantity)">Agregar al Carrito</button>
+        </div>
+    </div>
+</div>
