@@ -1,0 +1,56 @@
+<div class="container text-center">
+    <p>users works!</p>
+
+    <div class="row">
+        <div class="col col-md-7">
+            <h4>Listado</h4>
+        </div>
+        <div class="col">
+            <h4>Nuevo usuario</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-7">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <th>Avatar</th>
+                    <th>Nombre</th>
+                    <th>correo</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let u of usuarios">
+                        <td><img src={{u.avatar}} alt={{u.first_name}}></td>
+                        <td>{{u.first_name}} {{u.last_name}}</td>
+                        <td>{{u.email}}</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-warning me-2" (click)="update(u)">Editar</button>
+                            <button class="btn btn-sm btn-danger" (click)="delete(u.id)">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+
+            <form #miForm="ngForm" (ngSubmit)="create(miForm)">
+
+                <input name="id" type="hidden"  [(ngModel)]="userService.usuarioDatos.id">
+
+                <div class="mb-3">
+                    <label class="form-label" for="name">Nombre</label>
+                    <input class="form-control" id="name" name="name" type="text" placeholder="Nombre"  [(ngModel)]="userService.usuarioDatos.name">
+                </div>
+
+                <div class="mb-5">
+                    <label class="form-label" for="position">Puesto</label>
+                    <input id="position" class="form-control" name="job" type="text" placeholder="Puesto" [(ngModel)]="userService.usuarioDatos.job">
+                </div>
+                
+                <button type="submit" class="btn btn-success me-2">Agregar</button>
+                <button class="btn btn-outline-warning">Limpiar</button>
+                <div class="alert alert-success mt-3" role="alert" *ngIf="message!==''">{{message}}</div>
+            </form>
+
+        </div>
+    </div>
+</div>
