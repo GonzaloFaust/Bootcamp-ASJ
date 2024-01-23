@@ -1,0 +1,7 @@
+li{
+    border:1px solid lightgray;
+    padding: .5em;
+    margin-top: 1em;
+    border-radius: .2em;
+    width: max-content;
+}
