@@ -1,0 +1,43 @@
+<div class="container mt-5 w-50 ">
+    <h1 *ngIf="!edit">Crear Video</h1>
+    <h1 *ngIf="edit">Editar Video</h1>
+    <form #videoForm="ngForm">
+        <div class="form-group row mb-3">
+            <label for="titulo" class="col-sm-2 col-form-label">Título:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titulo" placeholder="Ingresa el título"
+                [(ngModel)]="video.titulo" name="titulo" required>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label for="categoria" class="col-sm-2 col-form-label">Categoria:</label>
+            <div class="col-sm-10">
+                <select placeholder="Ingrese la categoria" class="form-control" [(ngModel)]="video.categoria" 
+                name="categoria" id="categoria" required>
+                <option *ngFor="let categoria of categorias" value="{{categoria}}">{{categoria}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label for="url" class="col-sm-2 col-form-label">URL del Video:</label>
+            <div class="col-sm-10">
+                <input type="url" class="form-control" id="url" placeholder="Ingresa la URL del video"
+                [(ngModel)]="video.url" name="url" required>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingresa la descripción"
+                [(ngModel)]="video.descripcion" name="descripcion" maxlength="255"></textarea>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <div class="col-sm-12 d-flex justify-content-end">
+                <button *ngIf="edit" (click)="eliminar()" class="btn btn-danger me-2">Eliminar Video</button>
+                <button (click)="submit()" [disabled]="!videoForm.valid" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>

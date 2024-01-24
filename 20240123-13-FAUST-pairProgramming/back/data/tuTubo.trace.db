@@ -1,0 +1,41 @@
+2024-01-23 14:23:02.216815-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-23 14:25:59.739758-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-23 14:28:56.361882-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-23 23:41:44.730898-03:00 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"; SQL statement:
+insert into infovideos (categoria,descripcion,eliminado,estrellas,me_gusta,no_me_gusta,titulo,url,vistas,id) values (?,?,?,?,?,?,?,?,?,default) [22001-224]
+2024-01-23 23:42:30.522950-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-23 23:43:25.019319-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"; SQL statement:
+insert into infovideos (categoria,descripcion,eliminado,estrellas,me_gusta,no_me_gusta,titulo,url,vistas,id) values (?,?,?,?,?,?,?,?,?,default) [22001-224]
+2024-01-23 23:45:20.747536-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"; SQL statement:
+insert into infovideos (categoria,descripcion,eliminado,estrellas,me_gusta,no_me_gusta,titulo,url,vistas,id) values (?,?,?,?,?,?,?,?,?,default) [22001-224]
+2024-01-23 23:47:58.119724-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (811)"; SQL statement:
+insert into infovideos (categoria,descripcion,eliminado,estrellas,me_gusta,no_me_gusta,titulo,url,vistas,id) values (?,?,?,?,?,?,?,?,?,default) [22001-224]
+2024-01-23 23:49:47.120800-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (288)"
+Value too long for column "DESCRIPCION CHARACTER VARYING(255)": "U&'Bienvenido a un viaje transformador hacia el reino del enfoque profundo y una... (288)"; SQL statement:
+insert into infovideos (categoria,descripcion,eliminado,estrellas,me_gusta,no_me_gusta,titulo,url,vistas,id) values (?,?,?,?,?,?,?,?,?,default) [22001-224]
+2024-01-23 23:51:35.645073-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-24 01:54:35.471349-03:00 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
+2024-01-24 09:41:51.274944-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-224]
